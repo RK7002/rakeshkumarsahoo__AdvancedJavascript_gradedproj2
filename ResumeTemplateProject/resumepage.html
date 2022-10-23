@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Resume Page</title>
+</head>
+<body>
+   <div class="info">
+        <p class="pageinfo page hd"></p>
+        <p class="pageinfo" onclick="logout()">LogOut</p>
+   </div>
+   <div class="container">
+        <section>
+            <div class="flex-container">
+                <input type="search" id="searchbar" placeholder="Search By Keywords" autocomplete="off"/>
+                <button class="btn btn-previous" onclick="onPrevoius()">Previous</button>
+                <button class="btn btn-next" onclick="onNext()">Next</button>
+            </div>
+        </section>
+        <nav id="applicant">
+            <div class="candidate">
+                <h2 class="candidate-name"></h2>
+                <h4 class="candidate-role"></h4>
+            </div>
+        </nav>
+        <main id="workarea">
+            <h2 class="dashboard-header">WORK EXPERIENCE IN PREVIOUS COMPANY</h2>
+            <div class="dashboard-content">
+                <p><strong>Comapny Name: </strong><span class="company-name"></span></p>
+                <p><b>Position: </b><span class="position"></span></p>
+                <p><b>Start Date: </b><span class="start-date"></span></p>
+                <p><b>End Date: </b><span class="end-date"></span></p>
+                <p><b>Summary: </b><span class="summary"></span></p>
+            </div>
+        </main>
+        <div id="sidebar">
+            <div class="sidebar-content">
+                <p class="sidebar-heading">Personal Info</p>
+                <div class="sidebar-info">
+                    <p class="phone"></p>
+                    <p class="email"></p>
+                    <a href="#" class="network"></a>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <p class="sidebar-heading">Technical Skills</p>
+                <div class="sidebar-info">
+                    <p class="ts1"></p>
+                    <p class="ts2"></p>
+                    <p class="ts3"></p>
+                    <p class="ts4"></p>
+                    <p class="ts5"></p>
+                    <p class="ts6"></p>
+                </div>
+            </div>
+            <div class="sidebar-content">
+                <p class="sidebar-heading">Hobbies</p>
+                <div class="sidebar-info">
+                    <p class="hb1"></p>
+                    <p class="hb2"></p>
+                    <p class="hb3"></p>
+                    <p class="hb4"></p>
+                    <p class="hb5"></p>
+                    <p class="hb6"></p>
+                </div>
+            </div>       
+        </div>
+        <div id="projects">
+            <h2 class="dashboard-header">PROJECTS</h2>
+            <div class="dashboard-content">
+                <p><b><span class="project-name"></span>: </b><span class="project-description"></span></p>
+            </div>
+        </div>
+        <div id="education">
+            <h2 class="dashboard-header">EDUCATION</h2>
+            <div class="dashboard-content">
+                <ul>
+                    <li>
+                        <strong>UG: </strong>
+                        <span class="inst-name"></span>
+                    </li>
+                    <li>
+                        <strong>Senior Secondary: </strong>
+                        <span class="inst-ss"></span>
+                    </li>
+                    <li>
+                        <strong>High School: </strong>
+                        <span class="inst-hs"></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div id="internships">
+            <h2 class="dashboard-header">INTERNSHIP</h2>
+            <div class="dashboard-content">
+                <p><strong>Comapny Name: </strong><span class="company-name"></span></p>
+                <p><b>Position: </b><span class="position"></span></p>
+                <p><b>Start Date: </b><span class="start-date"></span></p>
+                <p><b>End Date: </b><span class="end-date"></span></p>
+                <p><b>Summary: </b><span class="summary"></span></p>
+            </div>
+        </div>
+        <footer id="footer1">
+            <h2 class="dashboard-header">ACHIEVEMENTS</h2>
+            <div class="dashboard-content">
+                <ul>
+                    <li class="achievements"></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+    <script src="./JS/Data.js"></script>
+    <script src="./JS/index.js"></script>
+</body>
+</html>
